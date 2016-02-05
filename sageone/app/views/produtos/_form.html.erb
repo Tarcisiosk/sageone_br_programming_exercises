@@ -1,0 +1,126 @@
+<%= form_for(@produto) do |f| %>
+  <% if @produto.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@produto.errors.count, "error") %> prohibited this produto from being saved:</h2>
+
+      <ul>
+      <% @produto.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+    
+    <div class="field">
+      <%= f.label :categoria %><br>
+      <%= f.text_field :categoria %>
+    </div>
+    <div class="field">
+      <%= f.label :unidade %><br>
+      <%= f.text_field :unidade %>
+    </div>
+    <div class="field">
+      <%= f.label :descricao %><br>
+      <%= f.text_field :descricao %>
+    </div>
+    <div class="field">
+      <%= f.label :identificacao %><br>
+      <%= f.text_field :identificacao %>
+    </div>
+    <div class="field">
+      <%= f.label :custo %><br>
+      <%= f.text_field :custo %>
+    </div>
+    <div class="field">
+      <%= f.label :preco_venda1 %><br>
+      <%= f.text_field :preco_venda1 %>
+    </div>
+    <div class="field">
+      <%= f.label :observacoes %><br>
+      <%= f.text_field :observacoes %>
+    </div>
+    <div class="field">
+      <%= f.label :fornecedor %><br>
+      <%= f.text_field :fornecedor %>
+    </div>
+    <div class="field">
+      <%= f.label :estoque %><br>
+      <%= f.text_field :estoque %>
+    </div>
+    <div class="field">
+      <%= f.label :cod_barra %><br>
+      <%= f.text_field :cod_barra %>
+    </div>
+    <div class="field">
+      <%= f.label :preco_venda2 %><br>
+      <%= f.text_field :preco_venda2 %>
+    </div>
+    <div class="field">
+      <%= f.label :preco_venda3 %><br>
+      <%= f.text_field :preco_venda3 %>
+    </div>
+    <div class="field">
+      <%= f.label :estoque_min %><br>
+      <%= f.text_field :estoque_min %>
+    </div>
+    <div class="field">
+      <%= f.label :estoque_max %><br>
+      <%= f.text_field :estoque_max %>
+    </div>
+    <div class="field">
+      <%= f.label :estoque_compra %><br>
+      <%= f.text_field :estoque_compra %>
+    </div>
+    <div class="field">
+      <%= f.label :fator_unid_venda %><br>
+      <%= f.text_field :fator_unid_venda %>
+    </div>
+    <div class="field">
+      <%= f.label :ncm %><br>
+      <%= f.text_field :ncm %>
+    </div>
+    <div class="field">
+      <%= f.label :marca %><br>
+      <%= f.text_field :marca %>
+    </div>
+    <div class="field">
+      <%= f.label :peso %><br>
+      <%= f.text_field :peso %>
+    </div>
+    <div class="field">
+      <%= f.label :tamanho %><br>
+      <%= f.text_field :tamanho %>
+    </div>
+    <div class="field">
+      <%= f.label :inativo %><br>
+      <%= f.text_field :inativo %>
+    </div>
+    <div class="field">
+      <%= f.label :tipo %><br>
+      <%= f.text_field :tipo %>
+    </div>
+    <div class="field">
+      <%= f.label :composicao %><br>
+      <%= f.text_field :composicao %>
+    </div>
+    <div class="field">
+      <%= f.label :mat_prima %><br>
+      <%= f.text_field :mat_prima %>
+    </div>
+    <div class="field">
+      <%= f.label :mat_exp %><br>
+      <%= f.text_field :mat_exp %>
+    </div>
+    <div class="field">
+      <%= f.label :para_venda %><br>
+      <%= f.text_field :para_venda %>
+    </div>
+    <div class="field">
+      <%= f.label :moeda %><br>
+      <%= f.text_field :moeda %>
+    </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
